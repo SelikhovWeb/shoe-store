@@ -1,0 +1,25 @@
+.wrapper{
+    width: 120px;
+    height: 40px;
+    border: 2px solid rgba(160, 160, 160, 0.7);
+    border-radius: 5px;
+    display: flex;
+    }
+
+.minus, .counter, .plus{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.minus{
+    border-right: 2px solid rgba(160, 160, 160, 0.7);
+    cursor: pointer;
+}
+.counter{
+
+}
+.plus{
+    border-left: 2px solid rgba(160, 160, 160, 0.7);
+    cursor: pointer;
+}

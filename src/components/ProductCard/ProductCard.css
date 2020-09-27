@@ -1,0 +1,177 @@
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+.product-card {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  margin: auto;
+  margin-left:2%;
+  margin-right:2%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.product-card__amount{
+  position: absolute;
+  top: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0px 60px;
+}
+.product-card__amountButton{
+  width: 50px;
+  height: 50px;
+  border: 1px solid  rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+  font-size: 25px;
+  font-weight: 300;
+  background-color: inherit;
+}
+.product-cardd__amountCounter{
+  font-size: 30px;
+  font-weight: 300;
+}
+.product-card__image {
+  height: 46%;
+  position: relative;
+}
+
+.product-card__png {
+  transform: rotate(-20deg);
+  width: 75%;
+  position: absolute;
+  top: 20%;
+  left: 11%;
+  margin-left: 0px;
+  transition: all 0.2s ease;
+}
+
+.product-card__image:hover .product-card__png {
+  width: 82%;
+  left: 8%;
+  transform: rotate(0deg);
+}
+
+.product-card__title {
+  color: rgb(30, 30, 30);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  height: 10%;
+  font-weight: 500;
+  font-size: 26px;
+  align-self: flex-start;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+.product-card__price {
+  color: rgb(17, 138, 23);
+}
+.product-card__sale-line {
+  position: absolute;
+  left: 75%;
+  top: 26%;
+  background-color: rgb(88, 80, 80);
+  width: 70px;
+  height: 2px;
+}
+.product-card__sale-price {
+  color: rgb(17, 138, 23);
+  text-shadow: 3px 3px 8px rgba(95, 95, 95, 0.5);
+  position: absolute;
+  left: 70%;
+  top: -120%;
+  font-size: 40px;
+  font-weight: 700;
+}
+.product-card__size {
+  display: flex;
+  height: 10%;
+  padding-left: 10%;
+  font-weight: 500;
+  color: rgb(30, 30, 30);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.product-card__color {
+  height: 10%;
+  padding-left: 10%;
+  font-weight: 500;
+  color: rgb(30, 30, 30);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.producr-card__button {
+  height: 20%;
+  align-self: center;
+  width: 50%;
+  display: flex;
+}
+.product-card__buyNow {
+  width: 100%;
+  border: 1px solid black;
+  height: 60%;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: inherit;
+}
+.label {
+  padding-left: 15px;
+}
+.size-checkbox {
+  display: none;
+}
+.fake {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  font-size: 14px;
+  position: relative;
+  text-shadow: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.fake::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: 0.2s;
+  background-color: #000;
+}
+
+.size-checkbox:checked + .fake:before {
+  opacity: 0.1;
+}
+
+.product-card-size {
+  display: flex;
+}
+
+.product-card__goToCart{
+  font-size: 20px;
+}
+.product-card__goToCart:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.product-card__cartIcon{
+  cursor: pointer;
+  margin-left: 10px;
+}

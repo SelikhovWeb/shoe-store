@@ -1,0 +1,36 @@
+/*PRODUCT PAGE STYLES*/
+
+.productsPage {
+  padding-top: 8vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.products {
+  margin: auto;
+  width: 80%;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.filtersBlock {
+  padding:20px 0px;
+  width: 80%;
+  margin: auto;
+  min-height: 100px;
+  display: flex;
+  align-self: flex-start;
+}
+
+.filterElement {
+  width: 18vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.footer{
+  align-self: flex-end;
+}

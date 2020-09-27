@@ -1,0 +1,66 @@
+.wrapper {
+  border: 1px solid rgba(160, 160, 160, 0.8);
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 25px 10px;
+}
+.deleteButton {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deleteButton:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  
+}
+.image {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  margin: 0px 10px;
+}
+.name {
+  width: 38%;
+  font-size: 18px;
+  margin-left: 4%;
+}
+.price {
+  color: rgb(0, 168, 8);
+  width: 10%;
+}
+.quantity {
+  width: 15%;
+}
+.total {
+  color: rgb(0, 168, 8);
+  width: 10%;
+  font-weight: 500;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

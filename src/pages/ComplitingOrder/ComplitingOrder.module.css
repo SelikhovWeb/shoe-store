@@ -1,0 +1,16 @@
+.wrapper{
+    padding-top: 8vh;
+    min-height: 100vh;
+    margin-bottom: 20vh;
+    
+}
+
+.orderPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

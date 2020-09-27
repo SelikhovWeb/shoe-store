@@ -1,0 +1,32 @@
+.wrapper {
+  width: 90vw;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 6vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  width: 22%;
+  cursor: pointer;
+  height: 100%;
+  border: 1px solid rgb(155, 155, 155, 0.5);/*Почему-то стили применяются к обоим компонентам*/
+  border-radius: 50px;
+  background-color: rgba(56, 56, 56, 0.2);
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+  font-size: 1.5vw;
+  font-weight: 300;
+  letter-spacing: .2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(97, 97, 97);
+}
+
+.button-link{
+  text-decoration: none;
+  color: inherit;
+}

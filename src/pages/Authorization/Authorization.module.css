@@ -1,0 +1,91 @@
+.authorizationPage {
+  padding-top: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.textCenter {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 23px;
+  margin-bottom: 50px ;
+  display: block;
+  text-align: center;
+}
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 3px;
+  padding: 70px 50px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.inputContainer {
+  position: relative;
+  margin-bottom: 30px;
+  width: 250px;
+}
+.inputContainer label {
+  position:absolute;
+	top:-15px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+  pointer-events:none;
+	transition: all 0.5s ease-in-out;
+}
+.inputContainer input {
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 0;
+  font-size: 16px;
+  color: #fff;
+}
+.inputContainer input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e74c3c;
+
+}
+.btn {
+  color: #fff;
+  background-color: #e74c3c;
+  margin-top: 25px;
+  outline: none;
+  border: 0;
+  color: #fff;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  align-self: center;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  color: #e74c3c;
+}
+
+.validationError{
+  color: #e74c3c;
+}
