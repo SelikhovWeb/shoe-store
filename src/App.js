@@ -21,7 +21,7 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/Sneaker-Shop-React-Project" exact component={Home} />
+          <Route path="/shoe-store" exact component={Home} />
           <Route path="/products" exact component={Products} />
           <Route path="/delivery" exact component={Delivery} />
           <Route path="/faq" exact component={Faq} />
