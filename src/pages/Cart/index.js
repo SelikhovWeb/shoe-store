@@ -3,15 +3,18 @@ import styles from "./Cart.module.css";
 import CartProduct from "../../components/CartProduct";
 import Footer from "../../components/Footer";
 import { useSelector } from "react-redux";
+
 function Cart(props) {
   let cartProducts = useSelector((store) => store.cart.products);
   let cartTotal = useSelector((store) => store.cart.total);
   console.log(props);
+
   const routeToOrderPage = () => {
     if (cartTotal !== 0) {
       props.history.push("/cart/complitingOrder");
     }
   };
+
   return (
     <div className="">
       <div className={styles.cartPage}>

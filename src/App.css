@@ -175,6 +175,19 @@ nav {
 .authorizationLink{
   margin-right: 20px;
 }
+.cartQuantity{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-radius: 30px;
+  background-color: #e74c3c;
+  top: 20px;
+  left: 100%;
+  z-index: 999;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
 /*CATEGORIES ON HOME PAGE SECTION*/
 
 .categories {

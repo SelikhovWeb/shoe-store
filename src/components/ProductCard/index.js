@@ -20,8 +20,16 @@ function ProductCard(props) {
     cartProducts.map((el) => {
       total += el.price;
     });
-    setAdding(true)
-    dispatch(addToCart(props.images[0], props.title, props.endPrice, 1, total + props.endPrice));
+    setAdding(true);
+    dispatch(
+      addToCart(
+        props.images[0],
+        props.title,
+        props.endPrice,
+        1,
+        total + props.endPrice
+      )
+    );
   }
 
   return (
@@ -47,14 +55,15 @@ function ProductCard(props) {
       <div className="product-card__color">
         <ProductCardColor setColor={setCount} items={props.colors} />
       </div>
-      <div className={`producr-card__button  ${!adding  ? "" : "hide"}`}>
+      <div className={`producr-card__button  ${!adding ? "" : "hide"}`}>
         <button onClick={addProduct} className="product-card__buyNow">
           Add to cart
         </button>
       </div>
       <div className={`product-card__amount ${adding ? "" : "hide"}`}>
-      <Link to="/Cart">
-        <div className="product-card__goToCart">Go to cart 
+        <Link to="/Cart" style={{ textDecoration: "none" }}>
+          <div className="product-card__goToCart">
+            Go to cart
             <FA
               className="product-card__cartIcon"
               name=" fa-cart-plus"
@@ -66,8 +75,7 @@ function ProductCard(props) {
               }}
             />
           </div>
-      </Link>
-        
+        </Link>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ function Nav() {
   let FA = require("react-fontawesome");
   const isAuth = useSelector((store) => store.user.isAuth);
   const userName = useSelector((store) => store.user.name);
+  const cartQuantity = useSelector((store) => store.cart.products.length)
   
   const navSlide = () => {
     const burger = document.querySelector(".burger");
@@ -74,6 +75,7 @@ function Nav() {
           </div>
           <div className="cartLink">
           <Link to="/Cart">
+              <div className={`cartQuantity ${cartQuantity===0? 'hide': ''}`}>{cartQuantity}</div>
             <FA
               name=" fa-cart-plus"
               size="2x"
