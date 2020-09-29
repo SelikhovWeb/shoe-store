@@ -34,7 +34,11 @@ function CartProduct(props) {
       <div className={styles.name}>{props.name}</div>
       <div className={styles.price}>{`$${props.price}.00`}</div>
       <div className={styles.quantity}>
-        <AmountCounter count={props.count} setCount={setAmount} />
+        <AmountCounter
+          count={props.count}
+          price={props.price}
+          setCount={setAmount}
+        />
       </div>
       <div className={styles.total}>{`$${props.price * amount}.00`}</div>
     </div>

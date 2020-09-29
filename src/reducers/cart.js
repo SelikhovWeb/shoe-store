@@ -25,7 +25,7 @@ const cartReducer = (state = initialState, action) => {
     case COUNT_TOTAL_CART:
       return {
         ...state,
-        total: action.payload.total,
+        total: state.total + action.payload.price,
       };
     default:
       return state;

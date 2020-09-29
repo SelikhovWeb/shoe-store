@@ -63,11 +63,11 @@ export const removeFromCart = (deleteName, price) => {
     },
   };
 };
-export const countTotalCart = (total) => {
+export const countTotalCart = (price) => {
   return {
     type: COUNT_TOTAL_CART,
     payload: {
-      total,
+      price,
     },
   };
 };
