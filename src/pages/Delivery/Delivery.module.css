@@ -1,0 +1,47 @@
+/*DELIVERY PAGE STYLES*/
+
+.deliveryPage {
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .deliveryLine{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .lineBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: fit-content;
+    margin-top: 15vh;
+  }
+  .stages{
+    display: flex;
+    width: 70%;
+    margin: auto ;
+    justify-content: space-around;
+    transform: translateY(-40px);
+  }
+  .imageBox{
+    width: 400px;
+    height: 400px;
+    margin-top: 5vh;
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4s ease-in-out;
+  }
+  .title{
+    margin-top: 5vh;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+  }
+  .description{
+    font-size: 28px;
+    font-weight: 400;
+    transition: 0.4s ease-in-out;
+  }
